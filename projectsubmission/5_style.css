@@ -1,0 +1,180 @@
+body{
+   font-family: 'Kanit:ital',sans-serif;
+   background-color:#A04747 ; 
+   color: #EEDF7A;
+   line-height: 1.6;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+}
+hr{
+    width: 50%;
+    margin: 20px auto;
+    border-top: 1px solid #A04747;
+}
+h1,h2{
+    color:#343131;
+    font-weight: 700;
+    background: linear-gradient(to left,#d39446,#EEDF7A);
+    
+}
+p{
+    font-weight: 400;
+    color: #343131;
+}
+a{
+    background:linear-gradient(to left,#d39446,#EEDF7A);
+    text-decoration: none;
+    color: #343131;
+}
+a:hover{
+    background:linear-gradient(to right,#d39446,#EEDF7A);
+    text-decoration: underline;
+    color: #343131;
+}
+.fas, .fab{
+    margin: auto;
+    color: inherit;
+}
+.icon-link{
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #A04747;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+.email-icon{
+    background-color: #EEDF7A;
+}
+.linkedin-icon{
+    background-color: #EEDF7A;
+}
+.icon-link:hover{
+    transform: scale(1.1);
+    color: #A04747;
+}
+header,footer{
+    color:#343131;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to left,#d39446,#EEDF7A);
+}
+section{
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px ;
+    object-fit: cover;
+}
+.skills-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+    justify-items: flex-start;
+}
+
+.skills-list li {
+    list-style-type: none;
+    background: #EEDF7A;
+    color: #343131;
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px black;
+}
+
+form{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    color :#343131;
+    background: #EEDF7A;
+    box-shadow: 0 5px 15px #343131;
+    
+}
+.form-group{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+.form-group label{
+    
+    margin-bottom: 5px;
+    
+}
+form input[type="text"],form input[type="email"],form textarea, form button{
+    width: 90%;
+    padding: 10px;
+    border:1px solid #343131;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+form button{
+    
+    background-image: linear-gradient(to right, #343131,#A04747);
+    color:#eedf7a;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:18px;
+    
+}
+form button:hover{
+    background-image:linear-gradient(to right,#A04747,#343131);
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+ul ,li{
+    display: flex;
+    background: #eedf7a;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px black;
+    margin:5px 5px;
+}
+
+@media only screen and (max-width:768px){
+    .skills-list {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:480px){
+    header,footer{
+        padding:15px;
+    }
+    section,form{
+        width:calc(100%-20px);
+        margin: 10px auto;
+    }
+    .icon-link{
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+    }
+    h1,h2{
+        font-size: 16px;
+    } 
+}
